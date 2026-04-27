@@ -1,4 +1,3 @@
-import { Accordion } from "../accordion/index.js";
 
 export class DogCardComponent {
     constructor(parent) {
