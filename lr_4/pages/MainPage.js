@@ -8,7 +8,7 @@ export class MainPage {
     constructor(parent) {
         this.parent = parent
         this.pageRoot = null
-        this.filter = 'all'
+        this.filter = 'friends'
     }
 
     getHTML() {
@@ -28,6 +28,8 @@ export class MainPage {
     render() {
         this.parent.innerHTML = ''
 
+
+
         const html = this.getHTML()
         this.parent.insertAdjacentHTML('beforeend', html)
 
@@ -41,10 +43,31 @@ export class MainPage {
     }
 
     getData() {
-        ajax.post(urls.getGroupMembers(groupId, this.filter), (data) => {
-            console.log(data)
+        this.pageRoot.innerHTML = '<p class="text-white">Загрузка...</p>'
 
-            this.renderData(data.response.items)
+        ajax.post(urls.getGroupMembers(groupId, this.filter), (data) => {
+            console.log("VK FULL RESPONSE:", data)
+
+            if (data?.error) {
+                console.error("VK ERROR:", data.error)
+
+                this.pageRoot.innerHTML = `
+                    <div class="text-white">
+                        <h3>Ошибка VK API</h3>
+                        <pre>${JSON.stringify(data.error, null, 2)}</pre>
+                    </div>
+                `
+                return
+            }
+
+            const items = data?.response?.items
+
+            if (!items || !items.length) {
+                this.pageRoot.innerHTML = "<p class='text-white'>Нет данных</p>"
+                return
+            }
+
+            this.renderData(items)
         })
     }
 
