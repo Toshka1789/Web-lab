@@ -2,7 +2,7 @@
 
 ### [Лабораторная №1](https://Toshka1789.github.io/Web-lab/lr_1/calculator.html) HTML и CSS
 
-### [Лабораторная №2](https://Toshka1789.github.io/Web-lab/lr_2/) Реализация функциональности калькулятора.
+### [Лабораторная №2](https://Toshka1789.github.io/Web-lab/lr_2/calculator.html) Реализация функциональности калькулятора.
 
 ### [Лабораторная №3](https://Toshka1789.github.io/Web-lab/lr_3/) Простое веб-приложение. Верстка
 
