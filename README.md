@@ -1,6 +1,6 @@
 # Лабораторные работы по дисциплине "WEB-программирование"  
 
-### [Лабораторная №1](https://Toshka1789.github.io/Web-lab/lr_1/) HTML и CSS
+### [Лабораторная №1](https://Toshka1789.github.io/Web-lab/lr_1/](https://Toshka1789.github.io/Web-lab/lr_1/calculator.html) HTML и CSS
 
 ### [Лабораторная №2](https://Toshka1789.github.io/Web-lab/lr_2/) Реализация функциональности калькулятора.
 
