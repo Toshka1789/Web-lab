@@ -6,8 +6,8 @@ export class FilterComponent {
     render(callback) {
         this.parent.innerHTML = `
             <select class="form-select w-25" id="filter">
-                <option value="all">Все</option>
-                <option value="friends">Друзья</option>
+                <option value="friends">Все участники</option>
+                <option value="managers">Админы</option>
             </select>
         `
 
