@@ -1,4 +1,4 @@
-import {accessToken, version} from "./consts.js";
+import {accessToken, version} from "/Web-lab/lr_4/modules/consts.js";
 
 class Urls {
     constructor() {
