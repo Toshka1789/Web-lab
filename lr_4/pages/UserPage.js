@@ -1,7 +1,7 @@
-import {ajax} from "../../modules/ajax.js"
-import {urls} from "../../modules/urls.js"
-import {ProductComponent} from "../../components/ProductComponent.js"
-import {BackButtonComponent} from "../../components/BackButtonComponent.js"
+import {ajax} from "/Web-lab/lr_4/modules/ajax.js"
+import {urls} from "/Web-lab/lr_4/modules/urls.js"
+import {ProductComponent} from "/Web-lab/lr_4/components/ProductComponent.js"
+import {BackButtonComponent} from "/Web-lab/lr_4/components/BackButtonComponent.js"
 
 export class UserPage {
     constructor(parent, id) {

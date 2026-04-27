@@ -1,8 +1,8 @@
-import {ajax} from "../../modules/ajax.js"
-import {urls} from "../../modules/urls.js"
-import {groupId} from "../../modules/consts.js"
-import {ProductCardComponent} from "../../components/ProductCardComponent.js"
-import {FilterComponent} from "../../components/FilterComponent.js"
+import {ajax} from "/Web-lab/lr_4/modules/ajax.js"
+import {urls} from "/Web-lab/lr_4/modules/urls.js"
+import {groupId} from "/Web-lab/lr_4/modules/consts.js"
+import {ProductCardComponent} from "/Web-lab/lr_4/components/ProductCardComponent.js"
+import {FilterComponent} from "/Web-lab/lr_4/components/FilterComponent.js"
 
 export class MainPage {
     constructor(parent) {
