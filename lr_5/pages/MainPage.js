@@ -1,13 +1,13 @@
-import {urls} from "../../modules/urls.js"
-import {groupId} from "../../modules/consts.js"
-import {ProductCardComponent} from "../../components/ProductCardComponent.js"
-import {FilterComponent} from "../../components/FilterComponent.js"
+import {urls} from "/Web-lab/lr_5/modules/urls.js"
+import {groupId} from "/Web-lab/lr_5/modules/consts.js"
+import {ProductCardComponent} from "/Web-lab/lr_5/components/ProductCardComponent.js"
+import {FilterComponent} from "/Web-lab/lr_5/components/FilterComponent.js"
 
 export class MainPage {
     constructor(parent) {
         this.parent = parent
         this.pageRoot = null
-        this.filter = 'all'
+        this.filter = 'friends'
     }
 
     getHTML() {
@@ -62,7 +62,6 @@ export class MainPage {
     renderData(items) {
         this.pageRoot.innerHTML = ''
 
-        // ❗ если список пустой
         if (!items.length) {
             this.pageRoot.innerHTML = '<p>Нет пользователей</p>'
             return

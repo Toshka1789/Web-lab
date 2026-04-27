@@ -1,5 +1,5 @@
-import {MainPage} from "./pages/MainPage.js"
-import {UserPage} from "./pages/UserPage.js"
+import {MainPage} from "/Web-lab/lr_5/pages/MainPage.js"
+import {UserPage} from "/Web-lab/lr_5/pages/UserPage.js"
 
 const root = document.getElementById('app')
 

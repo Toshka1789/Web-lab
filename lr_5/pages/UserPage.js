@@ -1,6 +1,6 @@
-import {urls} from "../../modules/urls.js"
-import {ProductComponent} from "../../components/ProductComponent.js"
-import {BackButtonComponent} from "../../components/BackButtonComponent.js"
+import {urls} from "/Web-lab/lr_5/modules/urls.js"
+import {ProductComponent} from "/Web-lab/lr_5/components/ProductComponent.js"
+import {BackButtonComponent} from "/Web-lab/lr_5/components/BackButtonComponent.js"
 
 export class UserPage {
     constructor(parent, id) {

@@ -1,4 +1,4 @@
-import {accessToken, version} from "./consts.js";
+import {accessToken, version} from "/Web-lab/lr_5/modules/consts.js";
 
 class Urls {
     constructor() {
@@ -6,7 +6,7 @@ class Urls {
         this.commonInfo = `access_token=${accessToken}&v=${version}`
     }
 
-    getGroupMembers(groupId, filter = 'all') {
+    getGroupMembers(groupId, filter = 'friends') {
         return `${this.url}/groups.getMembers?group_id=${groupId}&filter=${filter}&fields=photo_400_orig&${this.commonInfo}`
     }
 
